@@ -93,3 +93,8 @@ CREATE TABLE volunteer_locations (
     FOREIGN KEY (volunteer_id) REFERENCES volunteers(id),
     INDEX(volunteer_id)  -- Index for faster searches
 );
+
+
+// docker start mysql-container ---> starting a docker container
+docker exec -it mysql-container mysql -u root -p
+USE women_safety_analytics;
